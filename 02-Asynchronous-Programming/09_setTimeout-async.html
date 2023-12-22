@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event and Timeout</title>
+</head>
+<body>
+  <center> <!-- center tag is not the best practice ikr, but chalta hai sikhne ke liye ;) -->
+    <h1>Welcome, This is my portfolio!</h1>
+    <p>Note: Open console for more details</p>
+    <button id="stop">Stop The 2nd Event</button>
+  </center>
+</body>
+<script>
+
+  const delayOutput = function () {
+    console.log("Console output, after 2 sec!")
+  }
+
+  setTimeout(delayOutput, 2000) // not using delayOutput() cause it gets executed without waiting
+
+  const anotherEvent = function () {
+    document.querySelector('h1').innerHTML = "Namaste, This is 2nd event"
+    console.log("2nd event executed.")
+  }
+
+  const secondEvent = setTimeout(anotherEvent, 3000)
+
+  document.querySelector("#stop").addEventListener('click', function () {
+    clearTimeout(secondEvent)
+    console.log("2nd event is stopped.")
+  })
+
+</script>
+</html>
