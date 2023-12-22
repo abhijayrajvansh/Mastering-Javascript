@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asynchronous Program</title>
+</head>
+<body>
+  <center>
+    <h1>setInterval Vs setTimeout</h1>
+    <p>note: this deals with setInterval, open console for more.</p>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+  </center>
+</body>
+<script>
+  // javascript code goes here
+
+  const executionFn = function(str){
+    console.log(Date.now(), str)
+  }
+
+  let intervalID = false // global declaration hmmm
+  const startConsoleOutput = function () {
+    // dealing with edge testcases, here start button will not work until intervalID is false
+    if(!intervalID){ // now that's something a production level code
+      intervalID = setInterval(executionFn, 1000, "string value")
+    }
+    // now after assigning some value to intervalID it becomes true and the condition is ! valid.
+  }
+
+  const stopConsoleOutput = function () {
+    clearInterval(intervalID)
+    intervalID = false
+  }
+
+  document.querySelector("#start").addEventListener("click", startConsoleOutput)
+  document.querySelector("#stop").addEventListener("click", stopConsoleOutput)
+
+</script>
+</html>
