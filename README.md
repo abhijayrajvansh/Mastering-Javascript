@@ -1,3 +1,3 @@
 # Mastering-Javascript
 
-Author: Abhijay Rajvansh
+Author: [Abhijay Rajvansh](https://linkedin.com/in/abhijayrajvansh)
