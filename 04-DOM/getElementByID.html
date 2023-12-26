@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav calss="block">
+      <p class="paragraph">welome to the website</p>
+    </nav>
+    <div class="block">
+      <h4>Hi, my name is <span id="username">Abhijay Rajvansh!</span></h4>
+      <p class="paragraph">here's a code for you...</p>
+      <pre><code>window.conole.log(hello world)</code></pre>
+    </div>
+  </body>
+  <script>
+
+    const e1 = document.getElementById('username');
+    console.log(e1)
+    e1.innerText = 'Rajvansh Technologies!' // direct method
+
+    // injecting red-color class css style in that ID using JS
+    e1.classList.add('red-color', 'underline')
+    // instead .add you can use .remove('class-name') to remove that style effect
+  </script>
+</html>
