@@ -1,3 +1,3 @@
 # Mastering-Javascript
 
-Author: [Abhijay Rajvansh](https://x.com/rajvanshtwt), feel free to DM!
+Author: [Abhijay Rajvansh](https://x.com/rajvanshtwt). For any queries, feel free to DM!
