@@ -1,3 +1,3 @@
-# Mastering-Javascript
+# Important Concepts of JS:
 
-Author: [Abhijay Rajvansh](https://x.com/rajvanshtwt). For any queries, feel free to DM!
+author: [Abhijay Rajvansh](https://x.com/rajvanshtwt). For any queries, feel free to DM!
